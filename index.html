@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+
+</head>
+<body class="bg-blue-200">
+    <div class="bg-gray-800  w-[350px] h-[450px] mx-auto mt-[100px] rounded-[20px] relative">
+       <input  id="display" readonly class="bg-gray-700 w-[90%] text-5xl absolute p-4 text-white top-[20px] h-[60px] right-[15px] rounded-[5px] shadow-md">
+       <div class="grid grid-rows-4 grid-cols-4 gap-4 p-4 absolute top-[80px] left-3">
+        <button class="bg-orange-500 px-5 font-black rounded-[10px]" onclick="clearDisplay()">AC</button>
+        <button class="bg-orange-500 p-2 font-black rounded-[10px]">DE</button>
+        <button class="bg-green-200 rounded-[10px]" onclick="appendToDisplay('.')">.</button>
+        <button class="bg-green-200 p-2  rounded-[10px]" onclick="appendToDisplay('/')">/</button>
+        <button class="bg-cyan-200 p-2  rounded-[10px]" onclick="appendToDisplay('7')">7</button>
+        <button class="bg-cyan-200 p-2 py-4 rounded-[10px]" onclick="appendToDisplay('8')">8</button>
+        <button class="bg-cyan-200 p-2  rounded-[10px]" onclick="appendToDisplay('9')">9</button>
+        <button class="bg-green-200 p-2  rounded-[10px]" onclick="appendToDisplay('*')">*</button>
+        <button class="bg-cyan-200 p-2  rounded-[10px] " onclick="appendToDisplay('4')">4</button>
+        <button class="bg-cyan-200 p-2  rounded-[10px]" onclick="appendToDisplay('5')">5</button>
+        <button class="bg-cyan-200 p-2  rounded-[10px]" onclick="appendToDisplay('6')">6</button>
+        <button class="bg-green-200 p-2  rounded-[10px]" onclick="appendToDisplay('-')">-</button>
+        <button class="bg-cyan-200 p-2  rounded-[10px]" onclick="appendToDisplay('1')">1</button>
+        <button class="bg-cyan-200 p-2  rounded-[10px]" onclick="appendToDisplay('2')">2</button>
+        <button class="bg-cyan-200 p-2  rounded-[10px]" onclick="appendToDisplay('3')">3</button>
+        <button class="bg-green-200 p-2  rounded-[10px]" onclick="appendToDisplay('+')">+</button>
+        <button class="bg-gray-500 p-2  rounded-[10px]" onclick="appendToDisplay('00')">00</button>
+        <button class="bg-gray-500 p-2  rounded-[10px]" onclick="appendToDisplay('0')">0</button>
+        <button class="bg-green-200 p-2  rounded-[10px] col-span-2" onclick="calculate()">=</button>
+
+       </div>
+    </div>
+  
+
+  <script src="index.js"></script>
+  <script src="tailwind.js"></script>
+</body>
+</html>
